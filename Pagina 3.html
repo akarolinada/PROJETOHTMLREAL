@@ -9,6 +9,10 @@
 </head>
 
 <body>
+    <h1>Pet-shop Bom Retiro</h1>
+
+    <a href="Projeto final html.html" target="_self">Home</a> ° <a href="Pagina 2.html" target="_self">Mercadinho</a> °
+    <a href="" target="_self">Cadastro/Login</a>
     <h2>Dados do Cliente</h2>
     <form>
         <fieldset>
@@ -20,6 +24,9 @@
             <p>
                 <label for="senha">Senha:
                     <input type="password" id="senha" placeholder="Digite aqui sua senha">
+                    <p>
+                        <button type="login">Login</button>
+                    </p>
                 </label>
             </p>
         </fieldset>
@@ -30,22 +37,82 @@
                 <label for="name">Nome:</label>
                 <input type="name" id="name" placeholder="Digite seu nome completo">
             </p>
+            <p>
             <label for="adress">Endereço:</label>
             <input type="adress" id="adress" placeholder="Digite seu endereço">
             <label for="numeroDaRua"> Número:</label>
             <input type="number" id="numeroDaRua" placeholder="Número">
             <label for="complemento"> Complemento:</label>
             <input type="text" id="numeroDaRua" placeholder="Apt, Bloco, etc">
+            </p>
+            <label for=cep>CEP:</label>
+            <input type="text" id="cep" placeholder="digite seu CEP">
+            <label for="estado">Selecione seu Estado:</label>
+            <select id="estado" name="estado">
+                <option>Selecione o Estado</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+            <label for="cidade">Cidade:</label>
+            <input type="text" id=cidade placeholder="Digite aqui sua cidade">
+            </p>
             <p>
                 <label for="telefone">Telefone:</label>
                 <input type="tel" id="telefone" placeholder="(__)______-____">
             </p>
             <p>
-               <label for=email>E-mail:</label>
-               <input ty 
+                <label for=email>E-mail:</label>
+                <input type="email" id="email" placeholder="Digite aqui seu e-mail">
+            </p>
+            <label for="pagamento">Forma de Pagamento:</label><br>
+            <input type="radio" id="pagamento" name="pagamento" value="cartãoDeCredito">Cartão de Crédito<br>
+            <input type="radio" id="pagamento" name="pagamento" value="boletoBancario">Boleto Bancário<br>
+            <input type="radio" id="pagamento" name="pagamento" value="pix">Pix
+            </p>
+            <label for="contatoPromoções">Preferencia de Contato:</label>
+            <input type="checkbox" id="contatoPromoções" name="contatoPromoções" value="sms">SMS
+            <input type="checkbox" id="contatoPromoções" name="contatoPromoções" value="email">E-mail
+            </p>
+            <p>
+                <button type="submit">Cadastrar</button>
+                <button type="reset">Limpar</button>
             </p>
         </fieldset>
     </form>
+    <br>
+    <br>
+    <br>
+    <p>
+        <h5><i>Pet-Shop Bom Retiro<br>Rua da Coréia, 777 - Bairro Bom Retiro<br>Tel.:(11)9 9999-7777<br>E-mail:
+                petshopbomretiro@golmail.com.br<br>Horário de Funcionamento:<br>Seg. - Sex: 8h às 18h30<br>Sáb.: 9h -
+                12h<br>Dom.: Fechado</i></h5>
+        </p>
+    
 
 
 </body>
