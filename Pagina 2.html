@@ -9,47 +9,80 @@
 </head>
 
 <body>
-    <h1>Pet-shop Bom Retiro</h1>
+    <header>
+        <!--Nesse h1 em especifico usei um id para ser usado no a href na base da página, vai servir para quem tiver no fim, subir para o começo-->
+        <h1 id="home">Pet-shop Bom Retiro</h1>
 
-    <a href="Projeto final html.html" target="_self">Home</a> ° <a href="Pagina 2.html" target="_self">Mercadinho</a> °
-    <a href="Pagina 3.html" target="_self">Cadastro/Login</a>
-    <h2>Mercadinho</h2>
+        <a href="Projeto final html.html" target="_self">Home</a> ° <a href="Pagina 2.html"
+            target="_self">Mercadinho</a> °
+        <a href="Pagina 3.html" target="_self">Cadastro/Login</a>
+        <h2>Mercadinho</h2>
+        <p>
+        <form>
+            <!--Aqui coloquei uma caixa de busca que vi na apostila, pois achei super útil na loja.-->
+            <input name="busca" autofocus placeholder="Procure por um produto">
+            <input type="submit" value="Search">
+        </form>
+        </p>
+    </header>
     <br>
     <br>
-    <figure>
-        <img src="imagens/ração de gato.jpg" alt="imagem não encontrada" title="ração de gato"><br>
-        <figurecaption>Ração de Gato - 3kg <br>R$60,00</figurecaption>
-    </figure>
-    <figure>
-        <img src="imagens/comida de hamster.png" alt="imagem não encontrada" title="ração de hamster"><br>
-        <figurecaption>Ração de Hamster - 350g<br>R$15,00</figurecaption>
-    </figure>
-    <br><br><br><br>
-    <p>
-    <form>
-        <fieldset>
-            <legend>SAC</legend>
-            <label for="name">Nome:</label>
-            <input type="name" id="name" placeholder="Informe seu nome">
+    <br>
+    <main>
+        <!--O objetivo aqui era colocar duas páginas, uma para hamsters e outra para gatos, mas a princípio deixei o projeto exatamente como foi pedido-->
+        <figure>
+            <img src="imagens/ração de gato.jpg" alt="imagem não encontrada" title="ração de gato">
             <br>
-            <label for="email">E-mail</label>
-            <input type="email" id="email" placeholder="Informe seu e-mail">
+            <figurecaption>Ração de Gato - 3kg <br>R$60,00</figurecaption>
+        </figure>
+        <figure>
+            <img src="imagens/comida de hamster.png" alt="imagem não encontrada" title="ração de hamster">
+            <br>
+            <figurecaption>Ração de Hamster - 350g<br>R$15,00</figurecaption>
+        </figure>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>
+        <form>
+            <fieldset>
+                <!--Aqui nesse setor já separei um espaço para dúvidas, sejá sobre o produto, o fncionamento do site, entre outros -->
+                <legend>SAC</legend>
+                <label for="name">Nome:</label>
+                <input type="name" id="name" placeholder="Informe seu nome">
+                <br>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Informe seu e-mail">
+                <p>
+                    <label for="sac">Como podemos ajudar?</label>
+                    <textarea id=sac placeholder="Escreva aqui sua dúvida"></textarea>
+                    <br>
+                    <br>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </p>
+            </fieldset>
+            <br>
             <p>
-                <label for="sac">Como podemos ajudar?</label>
-                <textarea id=sac placeholder="Escreva aqui sua dúvida"></textarea>
+                <!--Esse botão não estou certa se está correto, mas o objetivo era fazer a volta para o topo (como mencionado no começo), mas queria manter o design de botão da página de cadastro.-->
+                <button type="voltar"><a href="#home">Voltar ao início da página</a></button>
             </p>
-        </fieldset>
-    </form>
-    </p>
-    <br><br><br>
-    <p>
-    <h5><i>Pet-Shop Bom Retiro<br>Rua da Coréia, 777 - Bairro Bom Retiro<br>Tel.:(11)9 9999-7777<br>E-mail:
-            petshopbomretiro@golmail.com.br<br>Horário de Funcionamento:<br>Seg. - Sex: 8h às 18h30<br>Sáb.: 9h -
-            12h<br>Dom.: Fechado</i></h5>
-    </p>
-
-    </p>
-
+        </form>
+        </p>
+        <br>
+        <br>
+        <br>
+    </main>
+    <footer>
+        <p>
+        <h5><i>Pet-Shop Bom Retiro | Rua da Coréia, 777 - Bairro Bom Retiro | Tel.:(11)9 9999-7777
+            <br>
+            E-mail: petshopbomretiro@golmail.com.br
+            <br>
+            Horário de Funcionamento: Seg. - Sex: 8h às 18h30 | Sáb.: 9h - 12h | Dom.: Fechado</i></h5>
+        </p>
+    </footer>
 </body>
 
 </html>
