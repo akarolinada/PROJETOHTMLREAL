@@ -7,57 +7,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Nas abas, pensei em repetir o nome da loja e o setor correspondente a cada página-->
     <title>Pet-Shop Bom Retiro | Home</title>
+    <!-- Link da fonte usada na nav1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap" rel="stylesheet">
+    <!-- Estilização externa -->
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
 </head>
 
 <body>
+    <!--Esta é a navegação superior que redireciona para as redes sociais-->
+    <nav class="nav1">
+        <div class="menu1"><a href="https://www.instagram.com/petshopbomretiro1/"><img src="imagens/instagram.png"
+                    class="img1"></a></div>
+        <div class="menu1"><a href="#"><img src="imagens/facebook.png" class="img1"></a></div>
+        <div class="menu1"><a href="#"><img src="imagens/twitter.png" class="img1"></a></div>
+        <div class="menu1"><a href="#"><img src="imagens/carrinho.png" class="img1"></a></div>
+    </nav>
     <header>
-        <!--Usei h1 nessa parte para destacar o nome da loja, de modo a chamar atenção.-->
-        <h1>Pet-shop Bom Retiro</h1>
+        <!--[REMOVED] Usei h1 nessa parte para destacar o nome da loja, de modo a chamar atenção.-->
+        <!--Substitui o h1 por uma imagem no formato gif feita no Canvas-->
+        <!--Estilização inline-->
+        <img src="imagens/Header2.gif"
+            style="width: 100%; height: 450px; border-radius: 10px; border: #26416D 5px solid;">
     </header>
-    <nav>
-        <!--Nessa parte pensei em um menu dividido pelos setores do site, de modo a já dar uma ideia ao cliente do que pode se rencontrado.-->
-        <a href="Projeto final html.html" target="_self">Home</a> ° <a href="Pagina 2.html"
-            target="_self">Mercadinho</a> °
-        <a href="Pagina 3.html" target="_self">Cadastro/Login</a>
+    <nav class="nav2">
+
+        <div class="menu2">
+            <a href="Projeto final html.html" target="_self">Home</a>
+        </div>
+        <div class="menu2">
+            <a href="Pagina 2.html" target="_self">Mercadinho</a>
+        </div>
+        <div class="menu2">
+            <a href="Pagina 3.html" target="_self">Cadastro / Login</a>
+        </div>
+
+        <!--Nessa parte pensei em um menu dividido pelos setores do site, de modo a já dar uma ideia ao cliente do que pode ser encontrado.-->
         <!--No texto da página inicial procurei falar sobre a empresa e como forma de incentivo ao cadastro, coloquei um link para o mesmo com uma chamada de cupom de desconto. -->
     </nav>
-    <main>
-        <p>Somos uma empresa que se preocupa com o bem-estar do seu pet, seja relacionado a saúde, lazer ou necessidades
-            básicas.
-            <br>
-            Estamos comprometidos com fornecer os melhores produtos, com marcas consolidadas e a melhor acessibilidade
-            possível no mercado.
-            <br>
-            <br>
-            <a href="Pagina 3.html">Cadastre-se aqui </a>e receba um cupom de R$10 na sua primeira compra!
-            <br>
-            <br>
-            Esperamos te atender da melhor maneira possível e estamos disponíveis para qualquer dúvida.<br><br>
-            <i><b>Boas compras!</b></i>
-            <br>
-            <br>
-            <!--Pensei em usar o strong na assinatura do sobre, como forma de trazer relevência ao nome e segmento da loja.-->
-            Equipe <strong>Pet-shop Bom Retiro
-                <br>
-                <br>
-                <br>
-                <!--Imagem apenas para divertir um pouco a página.-->
-                <img src="imagens/cat icon.png" alt="imagem não encontrada" title="cat">
-        </p>
+    <main class="main1">
 
-        <br>
-        <br>
-        <br>
-    </main>
-    <footer>
         <p>
-            <!--No footer coloquei as informações da loja em h5 mas ainda assim dando certa relevância por adicionar essa área em todas as páginas-->
-        <h5><i>Pet-Shop Bom Retiro | Rua da Coréia, 777 - Bairro Bom Retiro | Tel.:(11) 9 9999-7777
-                <br>
-                E-mail: petshopbomretiro@golmail.com.br
-                <br>
-                Horário de Funcionamento: Seg. - Sex: 8h às 18h30 | Sáb.: 9h - 12h | Dom.: Fechado</i></h5>
+            Somos uma empresa que se preocupa com o bem-estar do seu pet, seja relacionado a saúde, lazer ou
+            necessidades
+            básicas. </p>
+        <!-- <br> -->
+        <p>Estamos comprometidos com fornecer os melhores produtos, com marcas consolidadas e a melhor acessibilidade
+            possível no mercado. </p>
+        <!-- <br>
+            <br> -->
+        <p><a href="Pagina 3.html" class="link1">Cadastre-se aqui</a> e receba um cupom de R$10 na sua primeira compra!
         </p>
+        <!-- <br>
+            <br> -->
+        <p>Esperamos te atender da melhor maneira possível e estamos disponíveis para qualquer dúvida.</p>
+        <!-- <br><br> -->
+        <p class="p2">
+            <!--<i><b>-->Boas compras!
+            <!--</b></i>-->
+        </p>
+        <!-- <br>
+            <br> -->
+        <!--Pensei em usar o strong na assinatura do sobre, como forma de trazer relevência ao nome e segmento da loja.-->
+        <p>Equipe <strong class="strong1">Pet-shop Bom Retiro</strong></p>
+        <!-- <br>
+                <br>
+                <br> -->
+        <!-- [REMOVED] Imagem apenas para divertir um pouco a página.
+                <img src="imagens/cat icon.png" alt="imagem não encontrada" title="cat"> -->
+        <!-- <br>
+        <br>
+        <br> -->
+    </main>
+    <footer class="footer1">
+        <!--No footer coloquei as informações da loja em h5 mas ainda assim dando certa relevância por adicionar essa área em todas as páginas-->
+        <h5 class="h5-1">
+            Pet-Shop Bom Retiro | Rua da Coréia, 777 - Bairro Bom Retiro | Tel.:(11) 9 9999-7777<br>
+            E-mail: petshopbomretiro@golmail.com.br<br>
+            Horário de Funcionamento: Seg. - Sex: 8h às 18h30 | Sáb.: 9h - 12h | Dom.: Fechado<br>
+        </h5>
     </footer>
 </body>
 

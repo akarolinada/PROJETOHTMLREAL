@@ -6,84 +6,151 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet-Shop Bom Retiro | Mercadinho</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <!-- Estilização interna -->
+    <style>
+        .section1 {
+            width: 100%;
+            height: 40px;
+            background-color: #ff5757;
+            border-radius: 10px;
+            border: #26416D 5px solid;
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+            align-content: space-between;
+            align-items: center;
+        }
+
+        .input-search {
+            border-radius: 10px;
+            width: 70%;
+            height: 25px;
+            border: 3px solid #26416D;
+            background-color: #b0c4de;
+
+        }
+
+        .submit1 {
+            background-color: #b0c4de;
+            border-radius: 10px;
+            width: 25%;
+            height: 25px;
+            border: 3px solid #26416D;
+            align-items: center;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <!--Nesse h1 em especifico usei um id para ser usado no a href na base da página, vai servir para quem tiver no fim, subir para o começo-->
-        <h1 id="home">Pet-shop Bom Retiro</h1>
-    </header>
-    <nav>
-        <a href="Projeto final html.html" target="_self">Home</a> ° <a href="Pagina 2.html"
-            target="_self">Mercadinho</a> °
-        <a href="Pagina 3.html" target="_self">Cadastro/Login</a>
-        <h2>Mercadinho</h2>
+    <!--Esta é a navegação superior que redireciona para as redes sociais-->
+    <nav class="nav3" id="nav3">
+        <div class="menu1"><a href="https://www.instagram.com/petshopbomretiro1/"><img src="imagens/instagram.png"
+                    class="menu1"></a></div>
+        <div class="menu1"><a href="#"><img src="imagens/facebook.png" class="img1"></a></div>
+        <div class="menu1"><a href="#"><img src="imagens/twitter.png" class="img1"></a></div>
+        <div class="menu1"><a href="#"><img src="imagens/carrinho.png" class="img1"></a></div>
     </nav>
-        <p>
+    <logo class="logo1"></logo>
+    <header>
+        <!--[REMOVED] Usei h1 nessa parte para destacar o nome da loja, de modo a chamar atenção.-->
+        <!--Substitui o h1 por uma imagem no formato gif feita no Canvas-->
+        <!--Estilização inline-->
+        <img src="imagens/Header3.gif"
+            style="width: 100%; height: 450px; border-radius: 10px; border: #26416D 5px solid;">
+    </header>
+
+    <nav class="nav4">
+        <div class="menu3">
+            <a href="Projeto final html.html" target="_self">Home</a>
+        </div>
+        <div class="menu3">
+            <a href="Pagina 2.html" target="_self">Mercadinho</a>
+        </div>
+        <div class="menu3">
+            <a href="Pagina 3.html" target="_self">Cadastro / Login</a>
+        </div>
+    </nav>
+    <section class="section1">
         <form>
             <!--Aqui coloquei uma caixa de busca que vi na apostila, pois achei super útil na loja.-->
-            <input name="busca" autofocus placeholder="Procure por um produto">
-            <input type="submit" value="Search">
+            <input name="search" autofocus placeholder="Procure por um produto" class="input-search">
+            <input type="submit" value="Buscar" class="submit1">
         </form>
-        </p>
-    
+    </section>
+    <!-- <br>
     <br>
-    <br>
-    <br>
+    <br> -->
     <main>
-        <!--O objetivo aqui era colocar duas páginas, uma para hamsters e outra para gatos, mas a princípio deixei o projeto exatamente como foi pedido-->
-        <figure>
-            <img src="imagens/ração de gato.jpg" alt="imagem não encontrada" title="ração de gato">
-            <br>
-            <figurecaption>Ração de Gato - 3kg <br>R$60,00</figurecaption>
-        </figure>
-        <figure>
-            <img src="imagens/comida de hamster.png" alt="imagem não encontrada" title="ração de hamster">
-            <br>
-            <figurecaption>Ração de Hamster - 350g<br>R$15,00</figurecaption>
-        </figure>
+        <article class="article1">
+            <section class="section2">
+                <div class="product1">
+                    <img src="imagens/produto.png" alt="Imagem não pode ser exibida" title="Produto 1" style="width:225px; height: 225px; margin-left: 15px; margin-top: 15px;">
+                    <h4>Produto - $$,$$</h4>
+                </div>
+                <div class="product1">
+                    <img src="imagens/produto.png" alt="Imagem não pode ser exibida" title="Produto 2" style="width:225px; height: 225px; margin-left: 15px; margin-top: 15px;">
+                        <h4>Produto - $$,$$</h4>
+                </div>
+                <div class="product1">
+                    <img src="imagens/produto.png" alt="Imagem não pode ser exibida" title="Produto 3" style="width:225px; height: 225px; margin-left: 15px; margin-top: 15px;">
+                        <h4>Produto - $$,$$</h4>
+                </div>
+                <div class="product1">
+                    <img src="imagens/produto.png" alt="Imagem não pode ser exibida" title="Produto 4" style="width:225px; height: 225px; margin-left: 15px; margin-top: 15px;">
+                        <h4>Produto - $$,$$</h4>
+                </div>
+                <div class="product1">
+                    <img src="imagens/produto.png" alt="Imagem não pode ser exibida" title="Produto 5" style="width:225px; height: 225px; margin-left: 15px; margin-top: 15px;">
+                        <h4>Produto - $$,$$</h4>
+                </div>
+                <div class="product1">
+                    <img src="imagens/produto.png" alt="Imagem não pode ser exibida" title="Produto 6" style="width225px; height: 225px; margin-left: 15px; margin-top: 15px;">
+                        <h4>Produto - $$,$$</h4>
+                </div>
+            </section>
+        </article>
+        <!-- <br>
         <br>
         <br>
-        <br>
-        <br>
+        <br> -->
+        <article class="article2">
+            <section class="section3">
+                <form class="form1">
+                    <label>Nome:</label>
+                    <input class="nome1" type="text" palce><br>
+                    <label>Email:</label>
+                    <input class="email1" type="email"><br>
+                    <div class="mensagem">
+                        <label>Mensagem:</label>
+                        <textarea cols="35" rows="8"></textarea>
+                    </div>
+                    <br>
+                    <input class="submit1" type="submit" value="Enviar">
+                </form>
+            </section>
+        </article>
+        <!-- <br> -->
         <p>
-        <form>
-            <fieldset>
-                <!--Aqui nesse setor já separei um espaço para dúvidas, seja sobre o produto, o funcionamento do site, entre outros -->
-                <legend>SAC</legend>
-                <label for="name">Nome:</label>
-                <input type="name" id="name" placeholder="Informe seu nome">
-                <br>
-                <label for="email">E-mail</label>
-                <input type="email" id="email" placeholder="Informe seu e-mail">
-                <p>
-                    <label for="sac">Como podemos ajudar?</label>
-                    <textarea id=sac placeholder="Escreva aqui sua dúvida"></textarea>
-                    <br>
-                    <br>
-                    <button type="submit">Enviar</button>
-                    <button type="reset">Limpar</button>
-                </p>
-            </fieldset>
-            <br>
-            <p>
-                <!--Esse botão não estou certa se está correto, mas o objetivo era fazer a volta para o topo (como mencionado no começo), mas queria manter o design de botão da página de cadastro.-->
-                <button type="voltar"><a href="#home">Voltar ao início da página</a></button>
-            </p>
+            <!--Esse botão não estou certa se está correto, mas o objetivo era fazer a volta para o topo (como mencionado no começo), mas queria manter o design de botão da página de cadastro.-->
+            <button class="voltar1"><a href="#nav3">Voltar ao início da página</a></button>
+        </p>
         </form>
-        </p>
-        <br>
-        <br>
-        <br>
+
+
     </main>
-    <footer>
-        <p>
-        <h5><i>Pet-Shop Bom Retiro | Rua da Coréia, 777 - Bairro Bom Retiro | Tel.:(11) 9 9999-7777
-            <br>
-            E-mail: petshopbomretiro@golmail.com.br
-            <br>
-            Horário de Funcionamento: Seg. - Sex: 8h às 18h30 | Sáb.: 9h - 12h | Dom.: Fechado</i></h5>
-        </p>
+    <footer class="footer2">
+        <!--No footer coloquei as informações da loja em h5 mas ainda assim dando certa relevância por adicionar essa área em todas as páginas-->
+        <h5 class="h5-1">
+            Pet-Shop Bom Retiro | Rua da Coréia, 777 - Bairro Bom Retiro | Tel.:(11) 9 9999-7777<br>
+            E-mail: petshopbomretiro@golmail.com.br<br>
+            Horário de Funcionamento: Seg. - Sex: 8h às 18h30 | Sáb.: 9h - 12h | Dom.: Fechado<br>
+        </h5>
     </footer>
 </body>
 

@@ -5,147 +5,137 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet-Shop bom Retiro| Cadastro/Login </title>
+    <title>Pet-Shop bom Retiro | Cadastro/Login </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
 </head>
 
 <body>
-    <header>
-        <h1 id="home">Pet-shop Bom Retiro</h1>
-    </header>
-    <nav>
-        <a href="Projeto final html.html" target="_self">Home</a> ° <a href="Pagina 2.html"
-            target="_self">Mercadinho</a> °
-        <a href="" target="_self">Cadastro/Login</a>
+    <nav class="nav1">
+        <div class="menu1"><a href="https://www.instagram.com/petshopbomretiro1/"><img src="imagens/instagram.png"
+                    class="img1"></a></div>
+        <div class="menu1"><a href="#"><img src="imagens/facebook.png" class="img1"></a></div>
+        <div class="menu1"><a href="#"><img src="imagens/twitter.png" class="img1"></a></div>
+        <div class="menu1"><a href="#"><img src="imagens/carrinho.png" class="img1"></a></div>
     </nav>
-
+    
+    <header id="header3">
+        <nav class="nav4">
+            <div class="menu3">
+                <a href="Projeto final html.html" target="_self">Home</a>
+            </div>
+            <div class="menu3">
+                <a href="Pagina 2.html" target="_self">Mercadinho</a>
+            </div>
+            <div class="menu3">
+                <a href="Pagina 3.html" target="_self">Cadastro / Login</a>
+            </div>
+        </nav>
+    </header>
+    
     <main>
-        <h2>Dados do Cliente</h2>
         <form>
-            <fieldset>
-                <!--Para a área de formulario, achei legal deixar juntos o login e o cadastro. Pensei em um caso de um cliente já cadastrado, olhar o formulário de cadastro e querer mandar para alguém aproveitar o desconto. -->
-                <legend>Login</legend>
-                <p>
-                    <label for="user">Username:
-                        <input type="user" id="user" placeholder="Digite aqui seu usuário">
-                </p>
-                <p>
-                    <label for="senha">Senha:
-                        <input type="password" id="senha" placeholder="Digite aqui sua senha">
-                        <p>
-                            <button type="login">Login</button>
-                        </p>
-                    </label>
-                </p>
-            </fieldset>
-            <br>
-            <fieldset>
-                <legend>Cadastro</legend>
-                <p>
-                    <label for="user">Username:</label>
-                    <input type="user" id="user" placeholder="Crie um nome de usuário">
-                </p>
-                <p>
-                    <label for="senha">Senha:
-                        <input type="password" id="senha" placeholder="Crie uma senha">
-                        <p>
-                        <p>
-                            <label for="name">Nome:</label>
-                            <input type="name" id="name" placeholder="Digite seu nome completo">
-                        <p>
-                            <label for="dataNascimento">Selecione sua data de Nascimento:</label>
-                            <input type="date" id="dataNascimento" name="dataNascimento">
-                        </p>
-                </p>
-                <p>
-                    <label for="adress">Endereço:</label>
-                    <input type="adress" id="adress" placeholder="Digite seu endereço">
-                    <label for="numeroDaRua"> Número:</label>
-                    <input type="number" id="numeroDaRua" placeholder="Número">
-                    <label for="complemento"> Complemento:</label>
-                    <input type="text" id="numeroDaRua" placeholder="Apt, Bloco, etc">
-                </p>
-                <label for=cep>CEP:</label>
-                <input type="text" id="cep" placeholder="digite seu CEP">
-                <label for="estado">Selecione seu Estado:</label>
-                <select id="estado" name="estado">
-                    <option>Selecione o Estado</option>
-                    <option value="AC">Acre</option>
-                    <option value="AL">Alagoas</option>
-                    <option value="AP">Amapá</option>
-                    <option value="AM">Amazonas</option>
-                    <option value="BA">Bahia</option>
-                    <option value="CE">Ceará</option>
-                    <option value="DF">Distrito Federal</option>
-                    <option value="ES">Espírito Santo</option>
-                    <option value="GO">Goiás</option>
-                    <option value="MA">Maranhão</option>
-                    <option value="MT">Mato Grosso</option>
-                    <option value="MS">Mato Grosso do Sul</option>
-                    <option value="MG">Minas Gerais</option>
-                    <option value="PA">Pará</option>
-                    <option value="PB">Paraíba</option>
-                    <option value="PR">Paraná</option>
-                    <option value="PE">Pernambuco</option>
-                    <option value="PI">Piauí</option>
-                    <option value="RJ">Rio de Janeiro</option>
-                    <option value="RN">Rio Grande do Norte</option>
-                    <option value="RS">Rio Grande do Sul</option>
-                    <option value="RO">Rondônia</option>
-                    <option value="RR">Roraima</option>
-                    <option value="SC">Santa Catarina</option>
-                    <option value="SP">São Paulo</option>
-                    <option value="SE">Sergipe</option>
-                    <option value="TO">Tocantins</option>
-                </select>
-                <label for="cidade">Cidade:</label>
-                <input type="text" id=cidade placeholder="Digite aqui sua cidade">
-                </p>
-                <p>
-                    <label for="telefone">Telefone:</label>
-                    <input type="tel" id="telefone" placeholder="(__)______-____">
-                </p>
-                <p>
-                    <label for=email>E-mail:</label>
-                    <input type="email" id="email" placeholder="Digite aqui seu e-mail">
-                </p>
-                <p>
-                    <label for="pagamento">Forma de Pagamento:</label><br>
-                    <input type="radio" id="pagamento1" name="pagamento" value="cartãoDeCredito">
+            <article class="article3">
+                <section class="section4">
+                    <!--Para a área de formulario, achei legal deixar juntos o login e o cadastro. Pensei em um caso de um cliente já cadastrado, olhar o formulário de cadastro e querer mandar para alguém aproveitar o desconto. -->
+                    <p>Login</p>
+                    <p><label for="user1">Username:</label>
+                        <input type="user" id="user1" placeholder="Digite aqui seu usuário">
+                    </p>
+                    <p><label for="senha1">Senha:</label>
+                        <input type="password" id="senha1" placeholder="Digite aqui sua senha"></p>
+                    <p><input class="submit1" type="submit" value="Login">
+                        <input class="submit1" type="reset" value="Limpar">
+                    </p>
+                </section>
+                <section class="section5">
+                    <p>Cadastro</p>
+                    <p><label for="user">Username:</label>
+                        <input type="user" id="user2" placeholder="Crie um nome de usuário"></p>
+                    <p><label for="senha">Senha:</label>
+                       <input type="password" id="senha2" placeholder="Crie uma senha"></p>
+                    <p><label for="name2">Nome:</label>
+                       <input type="name" id="name2" placeholder="Digite seu nome completo"></p>
+                    <p><label for="dataNascimento">Data de Nascimento:</label>
+                      <input type="date" id="dataNascimento" name="dataNascimento"></p>
+                    <p><label for="adress">Endereço:</label>
+                        <input type="adress" id="adress" placeholder="Digite seu endereço"></p>
+                    <p><label for="numeroDaRua"> Número:</label>
+                        <input type="number" id="numeroDaCasa" placeholder="Número"></p>
+                    <p><label for="complemento"> Complemento:</label>
+                        <input type="text" id="complemento" placeholder="Apt, Bloco, etc"></p>
+                    <p><label for=cep>CEP:</label>
+                       <input type="text" id="cep" placeholder="digite seu CEP"></p>
+                    <p><label for="estado">Selecione seu Estado:</label>
+                    <select id="estado" name="estado">
+                        <option>Selecione o Estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select></p>
+                    <p><label for="cidade">Cidade:</label>
+                    <input type="text" id=cidade placeholder="Digite aqui sua cidade"></p>
+                    <p><label for="telefone">Telefone:</label>
+                      <input type="tel" id="telefone" placeholder="(__)______-____"></p>
+                    <p><label for="email2">E-mail:</label>
+                       <input type="email" id="email2" placeholder="Digite aqui seu e-mail"></p>
+                    <p><label for="pagamento">Forma de Pagamento:</label><br>
+                        <input type="radio" id="pagamento1" name="pagamento" value="cartãoDeCredito">
                     <label for="pagamento1">Cartão de Crédito</label>
-                    <br>
-                    <input type="radio" id="pagamento2" name="pagamento" value="boletoBancario">
-                    <label for="pagamento2">Boleto Bancário</label>
-                    <br>
-                    <input type="radio" id="pagamento3" name="pagamento" value="pix">
-                    <label for="pagamento3">Pix</label>
-                </p>
-                <label for="contatoPromoções">Preferencia de Contato:</label>
-                <label for="contatoPromoções1">SMS</label>
-                <input type="checkbox" id="contatoPromoções1" name="contatoPromoções" value="sms">
-                <label for="contatoPromoções2">E-mail</label>
-                <input type="checkbox" id="contatoPromoções2" name="contatoPromoções" value="email">
-                </p>
-                <p>
-                    <button type="submit">Cadastrar</button>
-                    <button type="reset">Limpar</button>
-                </p>
-            </fieldset>
+                        <input type="radio" id="pagamento2" name="pagamento" value="boletoBancario">
+                        <label for="pagamento2">Boleto Bancário</label>
+                        <input type="radio" id="pagamento3" name="pagamento" value="pix">
+                        <label for="pagamento3">Pix</label></p>
+                    <p><label for="contatoPromoções">Preferencia de Contato:</label>
+                    <label for="contatoPromoções1">SMS</label>
+                    <input type="checkbox" id="contatoPromoções1" name="contatoPromoções" value="sms">
+                    <label for="contatoPromoções2">E-mail</label>
+                    <input type="checkbox" id="contatoPromoções2" name="contatoPromoções" value="email">
+                    </p>
+                    <p>
+                        <input class="submit1" type="submit" value="Login">
+                        <input class="submit1" type="reset" value="Limpar">
+                    </p>
+            </article>
         </form>
+
         <p>
-            <button type="voltar"><a href="#home">Voltar ao início da página</a></button>
+            <button class="voltar2"><a href="#header3">Voltar ao início da página</a></button>
         </p>
-        <br>
-        <br>
-        <br>
     </main>
-    <footer>
-        <p>
-        <h5><i>Pet-Shop Bom Retiro | Rua da Coréia, 777 - Bairro Bom Retiro | Tel.:(11) s9 9999-7777
-                <br>
-                E-mail: petshopbomretiro@golmail.com.br
-                <br>
-                Horário de Funcionamento: Seg. - Sex: 8h às 18h30 | Sáb.: 9h - 12h | Dom.: Fechado</i></h5>
-        </p>
+    <footer class="footer3">
+        <!--No footer coloquei as informações da loja em h5 mas ainda assim dando certa relevância por adicionar essa área em todas as páginas-->
+        <h5 class="h5-1">
+            Pet-Shop Bom Retiro | Rua da Coréia, 777 - Bairro Bom Retiro | Tel.:(11) 9 9999-7777<br>
+            E-mail: petshopbomretiro@golmail.com.br<br>
+            Horário de Funcionamento: Seg. - Sex: 8h às 18h30 | Sáb.: 9h - 12h | Dom.: Fechado<br>
+        </h5>
     </footer>
 
 
