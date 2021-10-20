@@ -46,7 +46,8 @@ header {
 }
 
 header img{
-    width: 99%;
+    width: 95%;
+    margin-left: 10px;
 }
 
 .imagemher {
