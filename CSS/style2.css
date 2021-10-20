@@ -40,9 +40,13 @@ body {
 header {
     width: 98%;
     height: 130px;
-    background-image: url(/imagens/header2.png);
     border-radius: 10px;
     border: 2px solid #5CE1E6;
+    
+}
+
+header img{
+    width: 99%;
 }
 
 .imagemher {
