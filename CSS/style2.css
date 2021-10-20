@@ -1,0 +1,962 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px
+}
+
+body {
+    background-color: white;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+/*index.html*/
+
+.nav1 {
+    width: 100%;
+    height: 40px;
+    background-color: #5CE1E6;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-content: space-between;
+    align-items: center;
+}
+
+.menu1 {
+    padding: 25px;
+    margin-top: 5px;
+}
+
+header {
+    width: 98%;
+    height: 130px;
+    background-image: url(/imagens/header2.png);
+    border-radius: 10px;
+    border: 2px solid #5CE1E6;
+}
+
+.imagemher {
+    display:none;
+}
+
+.section1 {
+    width: 100%;
+    height: 250px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.nav2 {
+    width: 30%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.menu2 {
+    background-color: #5CE1E6;
+    border-radius: 10px;
+    width: 90%;
+    height: 50px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.menu2 a {
+    color: black;
+    font-size: 30px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Bonheur Royale', "cursive";
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.main1 {
+    width: 50%;
+    height: 250px;
+    background-color: #5CE1E6;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    font-family: "Arial", "Comic Sans", "Verdana", "Georgia";
+    font-size: 13px;
+    font-style: italic;
+    color: black;
+    font-weight: bold;
+}
+
+.main1 p {
+    margin: 12px;
+}
+
+.link1 {
+    text-decoration: none;
+    color: #26416D;
+    text-decoration: underline;
+}
+
+.strong1 {
+    color: #26416D;
+}
+
+.footer1 {
+    width: 100%;
+    height: 70px;
+    background-color: #5CE1E6;
+    border-radius: 10px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.h5-1 {
+    font-family: "Arial", "Comic Sans", "Verdana", "Georgia";
+    font-size: 13px;
+    font-weight: bold;
+    font-style: italic;
+    color: black;
+}
+
+/*loja*/
+
+.nav3 {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+.menu3 {
+    background-color: #5CE1E6;
+    border-radius: 10px;
+    width: 20%;
+    height: 30px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.menu3 a {
+    color: black;
+    font-size: 22px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Bonheur Royale', cursive;
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+form {
+    width: 100%;
+}
+
+.section2 {
+    width: 100%;
+    height: 40px;
+    background-color: #5CE1E6;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.input-search {
+    border-radius: 10px;
+    width: 15%;
+    height: 25px;
+    border: 3px solid #5CE1E6;
+    background-color: white;
+}
+
+.submit1 {
+    background-color: white;
+    border-radius: 10px;
+    width: 5%;
+    height: 25px;
+    border: 2px solid black;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.main2 {
+    width: 100%;
+    height: 700px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
+    align-items:center;
+    align-content: center;
+   
+}
+
+.product1 {
+    width: 250px;
+    height: 270px;
+    border-radius: 10px;
+    border: solid 2px #5CE1E6;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.img2 {
+    width: 160px;
+}
+
+.product1 h4 {
+    font-family: "Arial", "Comic Sans", "Verdana", "Georgia";
+    font-size: 15px;
+    color: black;
+}
+
+.select-prod, .comprar {
+    background-color: white;
+    border-radius: 10px;
+    width: 25%;
+    height: 25px;
+    border: 2px solid black;
+    align-items: center;
+}
+
+/*Form*/
+
+.main3 {
+    width: 100%;
+    height: 1000px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.form {
+    width: 100%;
+    height: 1000px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.login-sac {
+    width: 50%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.section3 {
+    width: 80%;
+    height: 250px;
+    background-color: #5CE1E6;
+    border-radius: 10px;
+    font-family: "Arial", "Comic Sans", "Verdana", "Georgia";
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+}
+
+.section3 h2 {
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.section3 label {
+    display: block;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+#user1, #senha1 {
+    border-radius: 10px;
+    width: 40%;
+    height: 25px;
+    border: 2px solid black;
+    background-color: white;
+}
+
+#senha1 {
+    margin-left: 30px;
+}
+
+.submit2 {
+    background-color: white;
+    border-radius: 10px;
+    width: 15%;
+    height: 25px;
+    border: 2px solid black;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+.section4 {
+    width: 80%;
+    height: 360px;
+    background-color: #5CE1E6;
+    border-radius: 10px;
+    font-family: "Arial", "Comic Sans", "Verdana", "Georgia";
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+}
+
+.section4 h2 {
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.section4 label {
+    display: block;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+.nome1, .email1 {
+    border-radius: 10px;
+    width: 40%;
+    height: 25px;
+    border: 2px solid black;
+    background-color: white;
+    margin-left: 32px;
+}
+
+.section4 textarea {
+    margin-top: 30px;
+    margin-left: 112px;
+    border-radius: 10px;
+    width: 60%;
+    height: 80px;
+    border: 2px solid black;
+    background-color: white;
+}
+
+.cadastro {
+    width: 50%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.section5 {
+    width: 80%;
+    height: 950px;
+    background-color: #5CE1E6;
+    border-radius: 10px;
+    font-family: "Arial", "Comic Sans", "Verdana", "Georgia";
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+.section5 h2 {
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.section5 label {
+    display: block;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+#user2, #senha2, #name2, #dataNascimento, #adress, #numeroDaCasa, #complemento, #cep, #estado, #cidade, #telefone, #email2 {
+    border-radius: 10px;
+    width: 40%;
+    height: 25px;
+    border: 2px solid black;
+    background-color: white;
+}
+
+.pagamento {
+    height: 40px;
+    margin-bottom: 20px;
+    margin-left: 219px;
+}
+
+.contato {
+    height: 20px;
+    ;
+    margin-top: 10px;
+    margin-left: 219px;
+}
+
+#user2 {
+    margin-left: 111px;
+}
+
+#senha2 {
+    margin-left: 139px;
+}
+
+#name2 {
+    margin-left: 143px;
+}
+
+#adress {
+    margin-left: 116px;
+}
+
+#dataNascimento {
+    margin-left: 40px;
+}
+
+#numeroDaCasa {
+    margin-left: 128px;
+}
+
+#complemento {
+    margin-left: 84px;
+}
+
+#cep {
+    margin-left: 153px;
+}
+
+#estado {
+    margin-left: 30px;
+}
+
+#cidade {
+    margin-left: 134px;
+}
+
+#telefone {
+    margin-left: 124px;
+}
+
+#email2 {
+    margin-left: 140px;
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+    .nav1 {
+        justify-content: center;
+    }
+    header {
+        display: none;
+        
+    }
+
+    .imagemher{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin:auto;
+        justify-content: center;
+
+    }
+
+
+    .section1 {
+        height: 700px;
+        margin-top: 10px;
+        flex-direction: column;
+        
+    }
+    .nav2 {
+        width: 100%;
+    }
+
+    .main1 {
+        width: 100%;
+        height: 500px;        
+        font-size: 20px;
+        border-radius: 0px;
+        
+    }
+    .footer1 {
+        height: 150px;        
+      
+    }
+
+    .h5-1 {
+        font-size: 15px;
+        
+    }
+
+    .nav3{
+        height: 250px;
+        flex-direction: column;
+    }
+
+    .menu3 {
+        width: 90%;
+        height: 50px;
+        margin-top: 10px;
+    }
+    
+    .menu3 a {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    .section2 {
+        height: 60px;
+        justify-content: center;
+    }
+
+    .input-search {
+        width: 70%;
+        height: 40px;
+       
+    }
+
+    .submit1 {
+        width: 20%;
+        height: 40px;
+        
+    }
+
+    .main2 {
+        height: 3000px;
+        margin-top: 15px;
+        grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(1, auto);
+        
+    }
+
+    .product1 {
+        width: 95%;
+        height: 400px;
+        
+    }
+
+    .img2 {
+        width: 250px;
+    }
+
+    .product1 h4 {
+        font-size: 20px;
+    }
+
+    .select-prod, .comprar {
+        width: 40%;
+        height: 40px;
+    }
+
+    .main3{
+        height: 2610px;
+    }
+
+    .form {
+        height: 2610px;
+        flex-direction:column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+
+    .login-sac{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    .section3{
+        width: 90%;
+        height: 400px;
+        font-size: 20px;
+        
+    }
+
+    .section3 label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    #senha1 {
+        margin-right: 30px;
+    }
+
+    #user1, #senha1 {
+        width: 90%;
+        height: 40px;
+        margin-top: 10px; 
+        
+    }
+
+    .submit2 {
+        width: 30%;
+        height: 40px;        
+        margin-left: 47px;
+    }
+
+    .section4{
+        width: 90%;
+        height: 500px;
+        font-size: 20px;
+    }
+
+    .section4 label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .nome1, .email1 {
+        width: 90%;
+        height: 40px;
+        margin-left: -25px;
+    }
+
+    .section4 textarea{
+        width: 86.5%;
+        margin-right:none;
+        margin-left:23px;
+    }
+
+    .cadastro {
+        width: 100%;
+        height: 1600px;
+        
+    }
+
+    .section5 {
+        width: 90%;
+        height: 1530px;
+        font-size: 20px;
+        
+    } 
+
+    .section5 label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        margin-left: 20px;
+    }
+
+    #user2, #senha2, #name2, #dataNascimento, #adress, #numeroDaCasa, #complemento, #cep, #estado, #cidade, #telefone, #email2{
+        width: 90%;
+        height: 40px;
+        margin-left: -20px;
+    }
+
+    .pagamento {
+        height: 60px;
+        margin-top: 10px;
+        margin-left: 60px;
+        margin-bottom: 10px;
+    }
+
+    .contato{
+        height: 60px;
+        margin-left: 60px;
+       
+    }
+
+}
+
+@media (min-width: 768px) and (max-width:1080px){
+    .nav1 {
+        height: 12vh;
+        justify-content: center;
+    }
+
+    .nav1 img{
+        width: 40px;
+    }
+
+    header {
+        display:none;
+    }
+
+    .imagemher{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin:auto;
+        justify-content: center;
+
+    }
+    .section1 {
+        height: 1100px;
+        margin-top: 10px;
+        flex-direction: column;
+        
+    }
+    .nav2 {
+        width: 100%;
+        height: 500px;
+    }
+
+    .menu2{
+        height: 80px;
+
+    }
+
+    .menu2 a{
+        font-size: 50px;
+    }
+
+    .main1 {
+        width: 100%;
+        height: 540px;        
+        font-size: 30px;
+        border-radius: 0px;
+        
+    }
+    .footer1 {
+        height: 200px;  
+        margin-top: 100px;      
+      
+    }
+
+    .h5-1 {
+        font-size: 25px;
+        
+    }
+
+    .nav3 {
+        width: 100%;
+        height: 500px;
+        flex-direction: column;
+        
+    }
+
+    .menu3 {
+        width: 90%;
+        height: 80px;
+        margin-top: 10px;
+    }
+    
+    .menu3 a {
+        font-size: 50px;
+        margin-top: 10px;
+    }
+
+    .section2 {
+        width: 100%;
+        height: 100px;
+        justify-content: center;
+    }
+
+    .input-search {
+        width: 70%;
+        height: 70px;
+       
+    }
+
+    ::placeholder {
+        font-size: 30px;
+        text-align: center;
+        font-family: "Arial";
+        text-align: center;
+    }
+
+    .submit1 {
+        width: 30%;
+        height: 70px;
+        font-family: "Arial";
+        font-size: 30px;
+        
+    }
+
+    .main2 {
+        height: 1500px;
+        margin-top: 15px;
+        grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+        
+    }
+
+    .product1 {
+        width: 80%;
+        height: 400px;
+        
+    }
+
+    .img2 {
+        width: 250px;
+    }
+
+    .product1 h4 {
+        font-size: 24px;
+    }
+
+    .select-prod, .comprar {
+        width: 70%;
+        height: 40px;
+    }
+
+    .main3{
+        height: 3400px;
+    }
+
+    .form {
+        height: 3400px;
+        flex-direction:column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+
+    .login-sac{
+        width: 100%;
+        height: 1300px;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    .section3{
+        width: 90%;
+        height: 500px;
+        font-size: 30px;
+        
+    }
+
+    .section3 label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+
+    #user1, #senha1 {
+        width: 90%;
+        height: 60px;
+        margin-top: 10px;           
+    }
+
+    #senha1 {
+        margin-right:30px;
+    }
+
+    .submit2 {
+        width: 40%;
+        height: 60px;
+        font-family: "Arial";
+        font-size: 30px;
+        margin-left: 50px;
+    }
+
+    .section4{
+        width: 90%;
+        height: 600px;
+        font-size: 30px;
+    }
+
+    .section4 label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .nome1, .email1 {
+        width: 90%;
+        height: 60px;
+        margin-left: -25px;
+    }
+
+    .section4 textarea{
+        margin-left: 45px;
+        width: 87%;
+        height: 100px;
+    }
+
+    
+    .cadastro {
+        width: 100%;
+        height: 2100px;
+        
+    }
+
+    .section5 {
+        width: 90%;
+        height: 2000px;
+        font-size: 30px;
+    } 
+
+    .section5 label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        margin-left: 20px;
+    }
+
+    #user2, #senha2, #name2, #dataNascimento, #adress, #numeroDaCasa, #complemento, #cep, #estado, #cidade, #telefone, #email2{
+        width: 90%;
+        height: 60px;
+        margin-left: -20px;
+    }
+
+    .selEstado{
+        font-family: "Arial";
+        font-size: 30px;
+    }
+
+    .pagamento {
+        height: 60px;
+        margin-top: 10px;
+        margin-left: 60px;
+        margin-bottom: 10px;
+    }
+
+    .contato{
+        height: 60px;
+        margin-left: 60px;
+       
+    }
+
+}
+    
+@media (min-width: 1081px) and (max-width: 2260px)
